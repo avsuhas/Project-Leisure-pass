@@ -1,0 +1,159 @@
+{
+	"info": {
+		"name": "LPG",
+		"_postman_id": "8ef2e678-e92e-a6f6-e943-a8f7b83b1463",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/customer/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"John\",\n\t\"lastName\" : \"Jason\",\n\t\"homeCity\" : \"sydney\",\n\t\"passCity\" : \"london\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/customer/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"add"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/customer/Cancel/{passId}",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"status\" : \"CANCELLED\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/customer/cancel/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"cancel",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/customer/renew/{passId}",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"status\" : \"ACTIVE\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/customer/renew/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"renew",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/customer/active/{passId}/{vendorId}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"John\",\n\t\"lastName\" : \"Jason\",\n\t\"homeCity\": \"sydney\",\n    \"passCity\": \"london\",\n\t\"status\" : \"CANCELLED\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/customer/status/1/2fc4d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"status",
+						"1",
+						"2fc4d"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/customer/{passId}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/customer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
