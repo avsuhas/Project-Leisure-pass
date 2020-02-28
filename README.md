@@ -29,6 +29,6 @@
 -------------------------------------------------------------
 ## Screen shots of the application.
 + DB data showing some data which will be loaded during the application startup.
-+ Other screen shots showing GET customer using pass id, add, renew, cancel, validate customer
 ![DB](https://user-images.githubusercontent.com/14169071/75553225-f598f580-5a05-11ea-96d7-931e6b410b3e.png)
-
++ Other screen shots showing GET customer using pass id, add, renew, cancel, validate customer
+<img width="1280" alt="Add" src="https://user-images.githubusercontent.com/14169071/75553295-1c572c00-5a06-11ea-9423-3e32e68bb751.png">
