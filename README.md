@@ -26,4 +26,9 @@
 + Server will start on port 8080 by default.
 + For testing purpose, you can use the postman collection which is available in this project.
 + Pass validity is default set to 30 days, when a new customer added into the system.
+-------------------------------------------------------------
+## Screen shots of the application.
++ DB data showing some data which will be loaded during the application startup.
++ Other screen shots showing GET customer using pass id, add, renew, cancel, validate customer
+![DB](https://user-images.githubusercontent.com/14169071/75553225-f598f580-5a05-11ea-96d7-931e6b410b3e.png)
 
