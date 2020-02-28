@@ -20,4 +20,10 @@
 + **_Renewing the pass :_** localhost:8080/customer/renew/{passId}
 + **_Vendor verify customer's pass :_** localhost:8080/customer/status/{passId}/{vendorId}
 -------------------------------------------------------------
-* 
+#### Instructions and assumption
++ Download or clone the project and install Lombock jar, Postman.
++ Run the application as spring boot application either from command line or using IDE.
++ Server will start on port 8080 by default.
++ For testing purpose, you can use the postman collection which is available in this project.
++ Pass validity is default set to 30 days, when a new customer added into the system.
+
