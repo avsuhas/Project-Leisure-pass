@@ -14,5 +14,9 @@
 ### Project technical details
 - **_Spring boot,Spring Data JPA,H2 in-memory database,Lombock,Postman as a rest client_**
 - ***Endpoints exposed***
+⋅⋅⋅***Adding customer :*** localhost:8080/customer/add
+⋅⋅⋅***Retrieveing customer using passId :*** localhost:8080/customer/1
+⋅⋅⋅
+⋅⋅⋅
 -------------------------------------------------------------
 * 
