@@ -28,7 +28,7 @@ public class CustomerController {
 	@Autowired
 	CustomerService service;
 
-	@GetMapping("/{id}")
+	@GetMapping("/{passId}")
 	public ResponseEntity<Customer> getInfo(@PathVariable Long passId) {
 		try {
 			Customer customerById = service.getCustomerById(passId);
@@ -40,7 +40,7 @@ public class CustomerController {
 	}
 	
 	@PostMapping("/add")
-	public ResponseEntity<?>  addCustomer(@RequestBody Customer customer) throws URISyntaxException {
+	public ResponseEntity<Customer>  addCustomer(@RequestBody Customer customer) throws URISyntaxException {
 		Customer addCustomer = service.add(customer);
 		return ResponseEntity.created(new URI("/customer/"+addCustomer.getPassId())).body(addCustomer);
 	}
@@ -57,7 +57,7 @@ public class CustomerController {
 	}
 	
 	@PatchMapping("/cancel/{passId}")
-	public ResponseEntity<?> cancelPass(@RequestBody Customer cancelCustomer, @PathVariable Long passId){
+	public ResponseEntity<Customer> cancelPass(@RequestBody Customer cancelCustomer, @PathVariable Long passId){
 		try {
 			Customer cancelCustomerPass = service.cancelCustomerPass(cancelCustomer, passId);
 			return ResponseEntity.ok().body(cancelCustomerPass);
@@ -68,7 +68,7 @@ public class CustomerController {
 	}
 	
 	@GetMapping("/status/{passId}/{vendorId}")
-	public ResponseEntity<?> activePass(@PathVariable Long passId, @PathVariable Long vendorId){
+	public ResponseEntity<?> activePass(@PathVariable Long passId, @PathVariable String vendorId){
 		 ResponseVO response = service.checkActive(passId, vendorId);
 		 return ResponseEntity.ok().body(response);
 	}

@@ -17,7 +17,7 @@ public interface ICustomerService {
 	
 	public  Customer cancelCustomerPass(Customer customerObj, Long passId) throws CustomerNotFoundException;
 	
-	public ResponseVO checkActive(Long passId, Long vendorId);
+	public ResponseVO checkActive(Long passId, String vendorId);
 
 
 }

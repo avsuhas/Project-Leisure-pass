@@ -25,6 +25,7 @@ public class CustomerService implements ICustomerService{
 	 * @param customer
 	 * @return
 	 */
+	@Override
 	public Customer add(Customer customer) {
 		return repository.save(toEntity(customer));
 	}
@@ -55,6 +56,7 @@ public class CustomerService implements ICustomerService{
 	 * @return
 	 * @throws CustomerNotFoundException
 	 */
+	@Override
 	public Customer getCustomerById(Long passId) throws CustomerNotFoundException{
 		Optional<Customer> customer = repository.findById(passId);		
 		return customer.orElseThrow(() -> new CustomerNotFoundException(passId));		
@@ -66,6 +68,7 @@ public class CustomerService implements ICustomerService{
 	 * @return
 	 * @throws CustomerNotFoundException
 	 */
+	@Override
 	public Customer renew(Customer customerObj, Long passId) throws CustomerNotFoundException {
 		Optional<Customer> customerOp = repository.findById(passId);
 		if(customerOp.isPresent()) {
@@ -89,6 +92,7 @@ public class CustomerService implements ICustomerService{
 	 * @return
 	 * @throws CustomerNotFoundException
 	 */
+	@Override
 	public  Customer cancelCustomerPass(Customer customerObj, Long passId) throws CustomerNotFoundException {
 		Optional<Customer> customer = repository.findById(passId);
 		if(customer.isPresent()){
@@ -115,7 +119,8 @@ public class CustomerService implements ICustomerService{
 	 * @param vendorId
 	 * @return
 	 */
-	public ResponseVO checkActive(Long passId, Long vendorId) {
+	@Override
+	public ResponseVO checkActive(Long passId, String vendorId) {
 		Optional<Customer> customerOp = repository.findByPassIdAndVendorId(passId,vendorId);
 		if(customerOp.isPresent()) {
 			Customer customer = customerOp.get();

@@ -18,7 +18,7 @@ public interface CustomerRepo extends CrudRepository<Customer, Long> {
 	 * @param vendorId
 	 * @return
 	 */
-	Optional<Customer> findByPassIdAndVendorId(Long passId, Long vendorId);
+	Optional<Customer> findByPassIdAndVendorId(Long passId, String vendorId);
 
 }
 
