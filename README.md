@@ -12,4 +12,4 @@
 - vendors can validate customer pass.
 
 ### Project technical details
-- **Spring boot,Spring Data JPA  _H2 in-memory database_**.
+- **_Spring boot,Spring Data JPA,H2 in-memory database,Lombock,Postman as a rest client_**,
