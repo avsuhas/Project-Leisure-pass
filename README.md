@@ -13,4 +13,6 @@
 
 ### Project technical details
 - **_Spring boot,Spring Data JPA,H2 in-memory database,Lombock,Postman as a rest client_**
-==========================================================================================
+- ***Endpoints exposed***
+-------------------------------------------------------------
+* 
