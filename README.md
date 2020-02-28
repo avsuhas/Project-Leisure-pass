@@ -32,3 +32,8 @@
 ![DB](https://user-images.githubusercontent.com/14169071/75553225-f598f580-5a05-11ea-96d7-931e6b410b3e.png)
 + Other screen shots showing GET customer using pass id, add, renew, cancel, validate customer
 <img width="1280" alt="Add" src="https://user-images.githubusercontent.com/14169071/75553295-1c572c00-5a06-11ea-9423-3e32e68bb751.png">
+
+<img width="1280" alt="Get" src="https://user-images.githubusercontent.com/14169071/75553374-46a8e980-5a06-11ea-96bb-3a17795a2610.png">
+<img width="1280" alt="Renew" src="https://user-images.githubusercontent.com/14169071/75553384-4c063400-5a06-11ea-8321-142eddc29ca5.png">
+<img width="1280" alt="Cancel" src="https://user-images.githubusercontent.com/14169071/75553402-5294ab80-5a06-11ea-8d95-e292e5747571.png">
+<img width="1280" alt="Vend" src="https://user-images.githubusercontent.com/14169071/75553411-56c0c900-5a06-11ea-8cd3-040de87d498d.png">
